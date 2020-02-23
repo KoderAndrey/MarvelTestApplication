@@ -14,5 +14,6 @@ public abstract class BaseActivity extends DaggerAppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mMarvelViewModel = new ViewModelProvider(this).get(MarvelViewModel.class);
+
     }
 }

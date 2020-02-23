@@ -10,6 +10,5 @@ public class MarvelViewModel extends ViewModel {
 
     @Inject
     public MarvelViewModel() {
-        Log.i("test_test", "create " + hashCode());
     }
 }

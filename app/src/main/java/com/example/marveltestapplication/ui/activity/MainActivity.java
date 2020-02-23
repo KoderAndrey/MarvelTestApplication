@@ -1,15 +1,11 @@
 package com.example.marveltestapplication.ui.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.marveltestapplication.R;
 import com.example.marveltestapplication.ui.base.BaseActivity;
-
-import dagger.android.support.DaggerAppCompatActivity;
 
 public class MainActivity extends BaseActivity {
 

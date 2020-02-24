@@ -34,7 +34,7 @@ public class NetworkState {
         return msg;
     }
 
-    public NetworkState error(String msg){
+    public static NetworkState error(String msg){
         return new NetworkState(Status.FAILED, msg);
     }
 }

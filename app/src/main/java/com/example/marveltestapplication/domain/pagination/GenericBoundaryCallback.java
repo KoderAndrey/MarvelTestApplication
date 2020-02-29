@@ -1,5 +1,6 @@
 package com.example.marveltestapplication.domain.pagination;
 
+import androidx.annotation.MainThread;
 import androidx.lifecycle.MutableLiveData;
 import androidx.paging.PagedList;
 
@@ -69,6 +70,13 @@ public class GenericBoundaryCallback<T> extends PagedList.BoundaryCallback<Chara
     public MutableLiveData<NetworkState> getNetworkState(){
         return mNetworkState;
     }
+
+    @MainThread
+    @Override
+    public void onItemAtEndLoaded(CharacterModel itemAtEnd){
+        mHelper.runIfNotRunning(PagingRequestHelper.RequestType.AFTER, );
+    }
+
 //    private fun getTop(offset: Int, pagingRequest: PagingRequestHelper.Request.Callback) {
 //        Timber.d("Request a new page $offset")
 //        getPage(offset)
